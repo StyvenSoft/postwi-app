@@ -11,4 +11,13 @@ class RegisterController extends Controller
     {
         return view('auth.register');
     }
+
+    public function store()
+    {
+        dd('Test');
+        // Validation 
+        // Store User
+        // Sign the user
+        // Redirect
+    }
 }
