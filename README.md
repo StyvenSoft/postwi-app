@@ -1,4 +1,6 @@
-# Postwi App
+<p align="center"><a href="https://postwi-app.herokuapp.com" target="_blank"><img src="./public/img/2c53c0873f2.png" width="200"></a></p>
+
+---
 
 This is a small project with user authentication to be able to post any comment or text and to like it, with a home section and dashboard, where I practice routes, data, pagination, email functionality and much more.
 
