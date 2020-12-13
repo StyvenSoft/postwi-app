@@ -11,7 +11,7 @@
 
         <form action="{{ route('login') }}" method="post">
             @csrf
-           
+            <img class="w-40 pb-3 my-auto" src="{{ asset('/img/2c53c0873f2.png') }}" alt="Logo">
             <div class="mb-4">
                 <label for="email" class="sr-only">Email</label>
                 <input type="email" name="email" id="email" placeholder="Your email" 

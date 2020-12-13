@@ -5,17 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon">
     <title>Postwi App</title>
 </head>
 
 <body class="bg-gray-300">
     <nav class="p-6 bg-white flex justify-between mb-6">
         <ul class="flex items-center">
-            <li><a href="/" class="p-3">Home</a></li>
+            <li><a href="/"><img class="w-40 pr-3" src="{{ asset('/img/dbeea537.png') }}" alt="Postwi"></a></li>
+            <li><a href="/" class="p-3 font-medium">Home</a></li>
             @auth
-                <li><a href="{{ route('dashboard') }}" class="p-3">Dashboard</a></li>
+                <li><a href="{{ route('dashboard') }}" class="p-3 font-medium">Dashboard</a></li>
             @endauth
-            <li><a href="{{ route('posts') }}" class="p-3">Posts</a></li>
+            <li><a href="{{ route('posts') }}" class="p-3 font-medium">Posts</a></li>
         </ul>
         <ul class="flex items-center">
         @auth
@@ -27,8 +30,8 @@
                 </form>
         @endauth
         @guest
-            <li><a href="{{ route('login') }}" class="p-3">Login</a></li>
-            <li><a href="{{ route('register') }}" class="p-3">Register</a></li>
+            <li><a href="{{ route('login') }}" class="p-3 font-medium">Login</a></li>
+            <li><a href="{{ route('register') }}" class="p-3 font-medium">Register</a></li>
         @endguest
         </ul>
     </nav>
