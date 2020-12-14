@@ -24,14 +24,14 @@
         @auth
             <li><a href="#" class="p-3">{{ auth()->user()->name }}</a></li>
             <li>
-                <form action="{{ route('logout')}}" method="post" class="p-3 inline bg-gray-100 rounded-lg">
+                <form action="{{ route('logout')}}" method="post" class="p-3 inline bg-gray-300 rounded-lg">
                     @csrf
                     <button type="submit">Logout</button>
                 </form>
         @endauth
         @guest
             <li><a href="{{ route('login') }}" class="p-3 font-medium">Login</a></li>
-            <li><a href="{{ route('register') }}" class="p-3 font-medium">Register</a></li>
+            <li><a href="{{ route('register') }}" class="p-3 font-medium bg-gray-300 rounded-lg">Sign up</a></li>
         @endguest
         </ul>
     </nav>
